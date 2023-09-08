@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@types/node": "^20.5.9"
+  },
+  "scripts": {
+    "build": "tsc && cp -r ./src/public/ ./dist/"
+  }
+}
