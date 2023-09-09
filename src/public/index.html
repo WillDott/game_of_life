@@ -2,12 +2,19 @@
 
 <head>
     <link rel="stylesheet" href="./stylesheet.css">
-    <script defer src="./game.js"></script>
+    <script defer src="../../dist/game.js"></script>
 </head>
 
-<body onload="createBoard(10,10)">
+<body onload="createGame(50,50)">
     <h1>Game of Life</h1>
-    <div id="board" onclick="">
+    <div id="board">
+    </div>
+    <button onclick="game.startGame(document.getElementById('interval').value)">Start/Stop</button>
+    <div>
+        <label for="interval">
+            Interval Rate (s):
+        </label>
+        <input id="interval" value="1"/>
     </div>
 </body>
 
